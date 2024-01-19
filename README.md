@@ -56,6 +56,6 @@ First of all you must download this repository from Github as ZIP or clone it.
 
 Santiago Germán Avalos - santiago.avalos@outlook.com
 
-Github repo: [WageWave](https://github.com/sanavalos)
+Github repo: [WageWave](https://github.com/sanavalos/WageWave)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
