@@ -92,7 +92,7 @@ function activate(context) {
   const pauseWageWave = () => {
     if (!isWageWavePaused) {
       isWageWavePaused = true;
-      vscode.window.showInformationMessage('WageWave paused. Resume it using "WageWave: Resume WageWave" command.');
+      vscode.window.showInformationMessage('WageWave paused. Resume it using "Resume WageWave" command.');
     }
   };
 
