@@ -10,7 +10,11 @@ function activate(context) {
 
   const startWageWave = async () => {
     if (isWageWavePaused) {
-      vscode.window.showInformationMessage('WageWave is already paused. Resume it using "WageWave: Resume WageWave" command.');
+      vscode.window.showInformationMessage('WageWave is already paused. Resume it using "Resume WageWave" command.');
+      return;
+    }
+    if (hourlyRate) {
+      vscode.window.showInformationMessage('WageWave is already running. Use "Pause WageWave" command to pause it.');
       return;
     }
 
@@ -42,7 +46,10 @@ function activate(context) {
 
     const interval = await vscode.window.showInputBox(intervalInputOptions);
     timerInterval = parseInt(interval) * 60 * 1000; 
-
+    if(!hourlyRate || !timerInterval){
+     vscode.window.showInformationMessage(`Oops! Something went wrong setting hourly rate/intervals.`);
+     return
+    }
     vscode.window.showInformationMessage(`Hourly rate set to $${hourlyRate}. WageWave started with ${interval}-minute intervals.`);
     updateEarnedMoney(); 
 
