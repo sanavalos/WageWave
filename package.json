@@ -16,14 +16,14 @@
       "command": "wagewave.startWageWave",
       "title": "Start WageWave"
     },
+    {"command": "wagewave.editWageWave",
+     "title": "Edit WageWave"
+    },
     {"command": "wagewave.pauseWageWave",
-     "title": "Pause WageWave."
+     "title": "Pause WageWave"
     },
     {"command": "wagewave.resumeWageWave",
      "title": "Resume WageWave"
-    },
-    {"command": "wagewave.updateEarnedMoney",
-     "title": "Updated earned money"
     }
    ]
   },
